@@ -1,16 +1,21 @@
 name: Deploy Astro site to GitHub Pages
 
+# События, при которых запускается workflow
 on:
   push:
-    branches: [ main ]
-  workflow_dispatch:
+    branches: [ main ]       # запуск при пуше в main
+  workflow_dispatch:          # возможность запускать вручную
 
+# Разрешения для GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
 jobs:
+  # -------------------------------
+  # 1. Build (сборка проекта)
+  # -------------------------------
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -29,16 +34,21 @@ jobs:
       - name: Build Astro site
         run: npm run build
 
-      # Загружаем артефакт для GitHub Pages
+      # Загружаем собранные файлы для деплоя
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
+  # -------------------------------
+  # 2. Deploy (развёртывание на Pages)
+  # -------------------------------
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
     needs: build
+    environment:                 # ✅ ОБЯЗАТЕЛЬНО: environment для GitHub Pages
+      name: github-pages
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
