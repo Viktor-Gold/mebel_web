@@ -161,7 +161,7 @@ p {
 ===================== */
 
 .hero {
-  background-image: url('public/main_image.png');
+  background-image: url('/main_image.png');
   background-size: cover;
   color: var(--color-light);
 }
@@ -294,7 +294,7 @@ p {
   top: 0;
   left: 0;
   position: absolute;
-  background-image: url('public/kitchen_2.jpg');
+  background-image: url('/kitchen_2.jpg');
   background-size: cover;
   background-position: 0px -150px;
   background-repeat: no-repeat;
@@ -307,7 +307,7 @@ p {
   top: 0;
   left: 0;
   position: absolute;
-  background-image: url('public/wardrobe.jpg');
+  background-image: url('/wardrobe.jpg');
   background-size: cover;
   background-position: 0px 0px;
   background-repeat: no-repeat;
@@ -320,7 +320,7 @@ p {
   top: 0;
   left: 0;
   position: absolute;
-  background-image: url('public/cabinet_furniture.jpg');
+  background-image: url('/cabinet_furniture.jpg');
   background-size: cover;
   background-position: 0px -30px;
   background-repeat: no-repeat;
@@ -333,7 +333,7 @@ p {
   top: 0;
   left: 0;
   position: absolute;
-  background-image: url('public/office_furniture.jpg');
+  background-image: url('/office_furniture.jpg');
   background-size: cover;
   background-position: 0px -30px;
   background-repeat: no-repeat;
@@ -345,7 +345,7 @@ p {
    STEPS
 ===================== */
 #steps {
-  background-image: url('public/white_marble.png');
+  background-image: url('/white_marble.png');
   background-size: cover;
   padding-bottom: 100px;
 }
