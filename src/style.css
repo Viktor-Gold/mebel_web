@@ -161,7 +161,7 @@ p {
 ===================== */
 
 .hero {
-  background-image: url('/main_image.png');
+  background-image: url('/main_image1.webp');
   background-size: cover;
   color: var(--color-light);
 }
@@ -294,10 +294,9 @@ p {
   top: 0;
   left: 0;
   position: absolute;
-  background-image: url('/kitchen_2.jpg');
+  background-image: url('/kitchen_2.webp');
   background-size: cover;
-  background-position: 0px -150px;
-  background-repeat: no-repeat;
+  background-position: 0px -100px;
   width: 100%;
   height: 130px;
 }
@@ -307,10 +306,8 @@ p {
   top: 0;
   left: 0;
   position: absolute;
-  background-image: url('/wardrobe.jpg');
+  background-image: url('/wardrobe.webp');
   background-size: cover;
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
   width: 100%;
   height: 130px;
 }
@@ -320,10 +317,9 @@ p {
   top: 0;
   left: 0;
   position: absolute;
-  background-image: url('/cabinet_furniture.jpg');
+  background-image: url('/cabinet_furniture.webp');
   background-size: cover;
-  background-position: 0px -30px;
-  background-repeat: no-repeat;
+  /* background-position: 0px -20px; */
   width: 100%;
   height: 130px;
 }
@@ -333,10 +329,8 @@ p {
   top: 0;
   left: 0;
   position: absolute;
-  background-image: url('/office_furniture.jpg');
+  background-image: url('/office_furniture.webp');
   background-size: cover;
-  background-position: 0px -30px;
-  background-repeat: no-repeat;
   width: 100%;
   height: 130px;
 }
@@ -427,6 +421,11 @@ p {
   scrollbar-width: none; /* Firefox */
   transition: transform 0.4s ease-in-out;
   gap: 16px;
+}
+
+.carousel__track img {
+  /* width: 300px; */
+  aspect-ratio: 4 / 3;
 }
 
 .carousel__item {
@@ -612,19 +611,19 @@ p {
   }
 
     #kitchen_2{
-    background-position: 0px -250px;
-  }
-
-    #wardrobe {
-    background-position: 0px -100px;
-  }
-
-  #cabinet_furniture {
     background-position: 0px -200px;
   }
 
+    #wardrobe {
+    background-position: 0px -50px;
+  }
+
+  #cabinet_furniture {
+    background-position: 0px 150px;
+  }
+
   #office_furniture {
-    background-position: 0px -150px;
+    background-position: 0px -80px;
   }
 
 }
